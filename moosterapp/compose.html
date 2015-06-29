@@ -1,0 +1,23 @@
+<div class="profile-moo">
+  <div class="right-moo">
+    <div>Hello <span ng-bind="username"></span>,
+      <button class="btn btn-info left-space" ng-click="logout()">Log Out</button>
+    </div>
+  </div>
+
+  <div class="right-moo">
+    <a class="btn btn-success" href="/#/profile">Update Profile</a>
+  </div>
+
+  <textarea class="form-control" rows="4" ng-keyup="remainingCount()" ng-model="newMoo"></textarea>
+  <div class="compose-under">
+    <span>{{remainingCount()}}</span> Characters Left
+    <button class="btn btn-success left-space" ng-click="createMoo()" ng-disabled="isTweetMaxed()">Moo!</button>
+  </div>
+  <div class="bottom-moo">
+    <h2>Your Moos:</h2>
+    <div class="moo-top" ng-repeat="moo in mooArray">
+      <p class="each-moo">{{moo.text}}</p>
+    </div>
+  </div>
+</div>

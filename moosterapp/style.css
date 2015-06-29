@@ -1,0 +1,71 @@
+.background-moo{
+  background-color: #89E8C8;
+}
+
+.header1{
+  font-size: 5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.hello-moo-space{
+  margin: 15px;
+}
+
+.right-moo{
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.intro-moo{
+  font-weight: 200;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #FFF;
+  color: #5BDE9C;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 25px;
+}
+
+.intro-moo input{
+  margin-left: 0;
+  background-color: #E8FFF4;
+}
+
+.intro-moo-spacing{
+  margin-left: 29%;
+}
+
+.profile-moo{
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.compose-under{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  float: right;
+}
+
+.left-space{
+  margin-left: 20px;
+}
+
+.each-moo{
+  background-color: #FFFFFF;
+  color: #89E8C8;
+  padding: 20px;
+}
+
+.moo-top{
+  margin-top: 30px;
+}
+
+.red{
+  color: red; 
+}
+
+.bottom-moo{
+  margin-top: 100px;
+}

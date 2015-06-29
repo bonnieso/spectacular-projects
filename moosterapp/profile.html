@@ -1,0 +1,27 @@
+<div class="profile-moo">
+
+  <div class="right-moo">
+    <div>Hello <span ng-bind="username"></span>,
+      <button class="btn btn-info left-space" ng-click="logout()">Log Out</button>
+    </div>
+  </div>
+  <div class="right-moo">
+    <a class="btn btn-success" href="/#/compose">Compose a Moo!</a>
+  </div>
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <p>Username
+        <input class="form-control hello-moo-space" ng-model="username">
+      </p>
+      <p>Email
+        <input class="form-control hello-moo-space" ng-model="userEmail">
+      </p>
+      <p>Password
+        <input class="form-control hello-moo-space" ng-model="userPassword" placeholder="******">
+      </p>
+      <p class="right-moo">
+        <button class="btn btn-warning" ng-click="updateProfile()">Update Profile</button>
+      </p>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "pages",
+  "version": "0.0.1",
+  "homepage": "http://bonnieso.github.io/spectacular-projects/",
+  "authors": [
+    "Bonnie So <contact@bonnieso.com>"
+  ],
+  "description": "pages example",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.1",
+    "angularfire": "~1.1.2"
+  }
+}
