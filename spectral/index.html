@@ -1,7 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/sweetalert.css">
   <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
 </head>
 
@@ -19,7 +20,7 @@
         <div class="title">
           <span>MARKDOWN</span>
           <span>
-            <button class="btn btn-default copy-button" clip-copy="rawInput" data-toggle="tooltip" data-placement="left" title="Copied!" tooltip>Copy</button>
+            <button class="btn btn-default copy-button" clip-copy="rawInput" ng-click='copied()'>Copy</button>
           </span>
         </div>
         <textarea class="mark" name="textarea" rows="10" cols="50" ng-model="rawInput" ng-keyup="read()"></textarea>
@@ -33,11 +34,10 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
-  <script src="markdown.js"></script>
-  <script src="ZeroClipboard.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/sweetalert.min.js"></script>
+  <script src="scripts/markdown.js"></script>
+  <script src="scripts/ZeroClipboard.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-clip/0.2.6/ng-clip.min.js"></script>
 
 </body>

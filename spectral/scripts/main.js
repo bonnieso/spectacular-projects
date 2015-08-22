@@ -1,5 +1,5 @@
 var app = angular.module("spec", ["ngClipboard"]);
- 
+
 app.config(['ngClipProvider', function(ngClipProvider) {
   ngClipProvider.setPath("//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.swf");
 }]);
@@ -10,11 +10,12 @@ app.controller("specCtrl", function($scope, $sce) {
   $scope.read = function() {
     $scope.output = $sce.trustAsHtml(marked($scope.rawInput));
   };
-  //
-  $scope.fallback = function(copy) {
-      window.prompt('Press cmd+c to copy the text below.', copy);
-    };
-  //
+  // $scope.fallback = function(copy) {
+  //     window.prompt('Press cmd+c to copy the text below.', copy);
+  //   };
+  $scope.copied = function(){
+    swal("Copied!", "Your markdown is copied and ready to paste.", "success");
+  };
 });
 
 app.directive('tooltip', function(){
