@@ -35,7 +35,7 @@ header h1{
 }
 
 .stand{
-  margin: 3em;
+  margin: 4%;
   height: 25em;
   background-color: #B3B9FF;
   position: relative;
@@ -44,16 +44,17 @@ header h1{
     width : 20px;
     height: 250px;
     background-color: #FFFFFF;
-    margin-left: 120px;
+    margin-left: 41%;
     position: absolute;
     bottom: 0;
 /*    z-index: -999999;   */
 }
 
 .bottom-stand {
-  width: 200px;
+  width: 70%;
   height: 15px;
-  margin-left: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #FFFFFF;
   position: absolute;
   bottom: 0;
@@ -61,28 +62,28 @@ header h1{
 
 .largest {
   background-color: #4a8bf4;
-  width:180px;
+  width: 60%;
   height: 35px;
   border-radius: 15px;
   position: absolute;
 /*  bottom: 15px;*/
-  left: 55px;
+  left: 20%;
 }
 .medium {
   background-color: #F759C0;
-  width:150px;
+  width: 50%;
   height: 35px;
   border-radius: 15px;
   position: absolute;
 /*  bottom: 50px;*/
-  left: 70px;
+  left: 25%;
 }
 .small {
   background-color: #F7DF59;
-  width:110px;
+  width: 40%;
   height: 35px;
   border-radius: 15px;
   position: absolute;
 /*  bottom: 85px;*/
-  left: 90px;
+  left: 30%;
 }

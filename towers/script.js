@@ -1,4 +1,4 @@
-//Towers of Hanoi Assignment
+//Towers of Hanoi
 
 $(document).ready(function(){
   var array1 = ["small", "medium", "largest"];
@@ -6,7 +6,7 @@ $(document).ready(function(){
   var array3 = [];
   var selected = "";
   var arrayDraw = [];
-  
+
   function drawBlocks(array){
     var bpadding = 15;
     for(var i = array.length-1; i>=0; i--){
@@ -15,13 +15,13 @@ $(document).ready(function(){
     }
   }
   drawBlocks(array1); //initializing blocks
-  
+
   $("button").on("click", function(){
     $("#stand-1").append(arrayDraw);
     arrayDraw = [];
   });
 
-  
+
   $(".stand").on("click", function(){
     var $this = $(this);
 
@@ -93,12 +93,12 @@ $(document).ready(function(){
 
         var win = ["small", "medium", "largest"];
         var winner = (array3.length === win.length) && array3.every(function(element, index) {
-        return element === win[index]; 
+        return element === win[index];
       });
         if (winner){
-          alert("You win!");
+          swal("You win!");
         }
-      } 
-    }  
+      }
+    }
   });
 });
