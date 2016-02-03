@@ -5,8 +5,14 @@ app.config(['ngClipProvider', function(ngClipProvider) {
 }]);
 
 app.controller("specCtrl", function($scope, $sce) {
-  $scope.rawInput = '';
+  var preview = "### Headers\n# h1\n## h2\n### h3\n\n### Bulleted lists\n* Snowflakes\n* Bunnies\n* Unicorns\n\n### Ordered Lists\n1. Rainbows\n2. Sprinkles\n3. Cupcakes\n\n### Links\nThis is [an example](http://www.google.com/) of a link.\n\n### Code Blocks\n    4 leading spaces make a code block";
+  $scope.rawInput = preview;
   $scope.output = '';
+
+  $scope.init = function(){
+    $scope.output = $sce.trustAsHtml(marked($scope.rawInput));
+  };
+
   $scope.read = function() {
     $scope.output = $sce.trustAsHtml(marked($scope.rawInput));
   };
